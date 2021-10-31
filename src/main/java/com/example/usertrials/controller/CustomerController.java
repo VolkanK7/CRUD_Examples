@@ -45,7 +45,7 @@ public class CustomerController {
     public List<Customer> getCustomerByName(@PathVariable String name){
         return this.customerService.getCustomerByName(name);
     }
-
+    //For update!
     @PutMapping("/updatecustomer")
     public Customer updateCustomer(@RequestBody Customer customer){
         return this.customerService.updateCustomer(customer);
