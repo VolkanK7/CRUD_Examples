@@ -42,10 +42,10 @@ public class AccountController {
         return this.accountService.updateAccount(id,accountDto);
     }
     //Not working rn!
-    @PutMapping("/updateByCustomerId/{id}")
+   /* @PutMapping("/updateByCustomerId/{id}")
     public Account updateAccountByCustomerId(@PathVariable int id,@RequestBody AccountDto accountDto){
         return this.accountService.updateAccountByCustomerId(id,accountDto);
-    }
+    } */
 
     @DeleteMapping("/deleteById/{id}")
     public void deleteAccount(@PathVariable int id){
